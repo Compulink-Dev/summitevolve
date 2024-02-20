@@ -19,7 +19,7 @@ function Introduction() {
                     <Title color='text-purple-600 mb-4' title='Introduction' />
                     <Subtitle title={home[0].title} color='text-gray-500' />
                     <div className="my-4">
-                        <Content content={home[0].paragraph} />
+                        <Content content={home[0].title} />
                     </div>
                     <div className="">
                         <Subtitle title={home[1].title} color='text-gray-500' />

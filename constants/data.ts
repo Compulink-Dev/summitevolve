@@ -241,28 +241,28 @@ export const link = [
 export const home = [
     {
         id: 1,
-        title: "Background",
-        paragraph: "The EVOLVE ICT SUMMIT is a Compulink Holdings Initiative that was inspired by the Rebrand Strategy they undertook to commemorate 31 years of Business Operations from 1991 to 2022."
+        title: "Background"!,
+        paragraph: "The EVOLVE ICT SUMMIT is a Compulink Holdings Initiative that was inspired by the Rebrand Strategy they undertook to commemorate 31 years of Business Operations from 1991 to 2022."!
     },
     {
         id: 2,
         title: "Who is Compulink ?",
-        paragraph: "Compulink Holdings is a proudly Zimbabwean, Information Communication Technology Company which was started on 1 July 1991. The founders saw a gap in the then budding ICT industry and took up the opportunity to offer their skills and services. The company started off by offering their clients Server Systems for Storage and back up."
+        paragraph: "Compulink Holdings is a proudly Zimbabwean, Information Communication Technology Company which was started on 1 July 1991. The founders saw a gap in the then budding ICT industry and took up the opportunity to offer their skills and services. The company started off by offering their clients Server Systems for Storage and back up."!
     },
     {
         id: 3,
-        title: "",
-        paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications. The Summit's prime platform is to showcase the latest trends and solutions within the industry across Zimbabwe. Under this year's theme “ADVANCING DIGITAL TRANSFORMATION AGENDA THROUGH ICT INFRASTRUCTURE IN DELIVERING GOVERNMENT SERVICES” the Summit will host over several Guest Speakers where various government departments, private entities, academic institutions and non-profit organizations, SMMEt's will gather at HICC in Harare for a Two-Day Summit and Exhibition on "
+        title: "!"!,
+        paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications. The Summit's prime platform is to showcase the latest trends and solutions within the industry across Zimbabwe. Under this year's theme “ADVANCING DIGITAL TRANSFORMATION AGENDA THROUGH ICT INFRASTRUCTURE IN DELIVERING GOVERNMENT SERVICES” the Summit will host over several Guest Speakers where various government departments, private entities, academic institutions and non-profit organizations, SMMEt's will gather at HICC in Harare for a Two-Day Summit and Exhibition on "!
     },
     {
         id: 4,
-        title: "",
-        paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications."
+        title: ""!,
+        paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications."!
     },
     {
         id: 5,
-        title: "",
-        paragraph: "You can't beat Evolve I.C.T Summit for size, depth and opportunity: we're truly the continent's most influential tech event. Don't miss out on being part of Africa's largest tech event this May!"
+        title: ""!,
+        paragraph: "You can't beat Evolve I.C.T Summit for size, depth and opportunity: we're truly the continent's most influential tech event. Don't miss out on being part of Africa's largest tech event this May!"!
     },
     {
         towers: [
@@ -475,28 +475,28 @@ export const contents = [
         home: [
             {
                 id: 1,
-                title: "Background",
-                paragraph: "The EVOLVE ICT SUMMIT is a Compulink Holdings Initiative that was inspired by the Rebrand Strategy they undertook to commemorate 31 years of Business Operations from 1991 to 2022."
+                title: "Background"!,
+                paragraph: "The EVOLVE ICT SUMMIT is a Compulink Holdings Initiative that was inspired by the Rebrand Strategy they undertook to commemorate 31 years of Business Operations from 1991 to 2022."!
             },
             {
                 id: 2,
-                title: "Who is Compulink ?",
-                paragraph: "Compulink Holdings is a proudly Zimbabwean, Information Communication Technology Company which was started on 1 July 1991. The founders saw a gap in the then budding ICT industry and took up the opportunity to offer their skills and services. The company started off by offering their clients Server Systems for Storage and back up."
+                title: "Who is Compulink ?"!,
+                paragraph: "Compulink Holdings is a proudly Zimbabwean, Information Communication Technology Company which was started on 1 July 1991. The founders saw a gap in the then budding ICT industry and took up the opportunity to offer their skills and services. The company started off by offering their clients Server Systems for Storage and back up."!
             },
             {
                 id: 3,
-                title: "",
-                paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications. The Summit's prime platform is to showcase the latest trends and solutions within the industry across Zimbabwe. Under this year's theme “ADVANCING DIGITAL TRANSFORMATION AGENDA THROUGH ICT INFRASTRUCTURE IN DELIVERING GOVERNMENT SERVICES” the Summit will host over several Guest Speakers where various government departments, private entities, academic institutions and non-profit organizations, SMMEt's will gather at HICC in Harare for a Two-Day Summit and Exhibition on "
+                title: ""!,
+                paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications. The Summit's prime platform is to showcase the latest trends and solutions within the industry across Zimbabwe. Under this year's theme “ADVANCING DIGITAL TRANSFORMATION AGENDA THROUGH ICT INFRASTRUCTURE IN DELIVERING GOVERNMENT SERVICES” the Summit will host over several Guest Speakers where various government departments, private entities, academic institutions and non-profit organizations, SMMEt's will gather at HICC in Harare for a Two-Day Summit and Exhibition on"!
             },
             {
                 id: 4,
-                title: "",
-                paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications."
+                title: ""!,
+                paragraph: "The Annual ICT Summit is proudly hosted in the Harare, Zimbabwe, functions as a powerhouse where businesses engage in talks, networking for business development opportunities, and create platforms to strategize and discuss new topical ICT issues, trends, innovative ideas, and online communications."!
             },
             {
                 id: 5,
-                title: "",
-                paragraph: "You can't beat Evolve I.C.T Summit for size, depth and opportunity: we're truly the continent's most influential tech event. Don't miss out on being part of Africa's largest tech event this May!"
+                title: ""!,
+                paragraph: "You can't beat Evolve I.C.T Summit for size, depth and opportunity: we're truly the continent's most influential tech event. Don't miss out on being part of Africa's largest tech event this May!"!
             },
         ]
     },

@@ -23,6 +23,7 @@ function Mission() {
                 {
                     values.map((value) => (
                         <Card
+                            key={value.id}
                             paint={value.paint}
                             bgPaint={value.paint}
                             title={value.title}

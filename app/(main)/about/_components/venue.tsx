@@ -4,6 +4,13 @@ import Link from "next/link";
 import React from "react";
 import { MdLocationPin } from "react-icons/md";
 
+const para = ({ content }: { content: string | undefined }) => {
+    return (
+        <p className="">{content}</p>
+    )
+}
+
+
 function Venue() {
     return (
         <div className="bg-purple-300 my-8">
@@ -16,7 +23,7 @@ function Venue() {
                     </div>
                 </div>
                 <div className="col-span-1 flex flex-col items-start justify-between">
-                    <h1 className="text-2xl md:text-4xl font-bold text-purple-700">{contents[1].about[5].title}</h1>
+                    <h1 className="text-2xl md:text-4xl font-bold text-purple-700">{about[5].title}</h1>
                     <div className="text-sm text-gray-700 mt-2">
                         {/* The Rainbow Towers Hotel & International Conference Centre is an
                         international convention centre with unequalled conferencing
@@ -29,7 +36,7 @@ function Venue() {
                         exhibitions. For this reason we believe this is the choice of venue
                         for the Evolve ICT Summit */}
                         {
-                            contents[1].about[5].paragraph
+                            about[5].paragraph
                         }
                     </div>
                     <Link

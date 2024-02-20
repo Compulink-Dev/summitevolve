@@ -17,7 +17,7 @@ function Interest() {
             <div className="text-center">
                 <Title color='text-purple-600' title='The Place to be' />
                 <p className="text-gray-500 mt-2 mx-8 text-sm">
-                    You can't beat Evolve I.C.T Summit for size, depth and opportunity: we're truly the continent's most influential tech event. Don't miss out on being part of Africa's largest tech event this May!
+                    {"You can't beat Evolve I.C.T Summit for size, depth and opportunity: we're truly the continent's most influential tech event. Don't miss out on being part of Africa's largest tech event this May!"}
                 </p>
             </div>
             <div className="flex items-center justify-center mt-8 gap-4 flex-wrap">
