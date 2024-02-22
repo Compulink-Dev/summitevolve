@@ -18,13 +18,13 @@ function Hero({ imageUrl }: HeroProps) {
                 </h1>
 
             </div>
-            <div className="flex flex-col items-center justify-end pb-8 md:pb-36">
-                <Button className='bg-purple-700 p-8 w-3/5'>
+            <div className="flex flex-col items-center justify-end pb-8 md:pb-36 px-4 md:px-0">
+                <Button className='bg-purple-700 p-8 w-full md:w-3/5'>
                     <Link href={'/login'}>
                         Register your interest for the Evolve Summit
                     </Link>
                 </Button>
-                <Button className='mt-4 w-3/5 p-8' variant={'outline'}>
+                <Button className='mt-4 w-full md:w-3/5 p-8' variant={'outline'}>
                     <Link href={'/contact'}>
                         Enquire to become a partner
                     </Link>

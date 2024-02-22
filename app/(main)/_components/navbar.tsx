@@ -7,6 +7,12 @@ import { MdClose, MdHome, MdMenu } from "react-icons/md";
 
 function NavBar() {
     const [navbar, setNavbar] = useState(false);
+    const [isVisible, setIsVisible] = useState(false)
+
+    const toggleMenu = () => {
+        setIsVisible(!isVisible);
+    };
+
     return (
         <div className=" bg-purple-600">
             <div className="flex items-center justify-between mx-4 py-4">
@@ -24,7 +30,50 @@ function NavBar() {
 
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 
-                    <ul className="flex items-center ml-4 justify-center md:flex">
+                    <ul className="hidden items-center ml-4 justify-center md:flex">
+                        <Link href="/" className="text-3xl pb-4 md:pb-0 text-purple-500 ">
+                            <MdHome />
+                        </Link>
+                        <li className="px-6 text-center mb-4 md:mb-0  ">
+                            <Link
+                                href="/about"
+                                className="hover:border-b-2 hover:border-purple-500 transition-all  pb-2 text-purple-500"
+                                onClick={() => setNavbar(!navbar)}
+                            >
+                                About
+                            </Link>
+                        </li>
+                        <li className="px-6 text-center mb-4 md:mb-0  ">
+                            <Link
+                                href="/speakers"
+                                className="hover:border-b-2 hover:border-purple-500 transition-all  pb-2 text-purple-500"
+                                onClick={() => setNavbar(!navbar)}
+                            >
+                                Speakers
+                            </Link>
+                        </li>
+                        <li className="px-6 text-center mb-4 md:mb-0  ">
+                            <Link
+                                href="/event"
+                                className="hover:border-b-2 hover:border-purple-500 transition-all  pb-2 text-purple-500"
+                                onClick={() => setNavbar(!navbar)}
+                            >
+                                Event
+                            </Link>
+                        </li>
+                        <li className="px-6 text-center mb-4 md:mb-0  ">
+                            <Link
+                                href="/contact"
+                                className="hover:border-b-2 hover:border-purple-500 transition-all pb-2 text-purple-500"
+                                onClick={() => setNavbar(!navbar)}
+                            >
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+
+                    {/* Mobile Responsive */}
+                    <ul className="fixed left-0 right-0 min-h-screen bg-purple-900 space-y-4 p-4">
                         <Link href="/" className="text-3xl pb-4 md:pb-0 text-purple-500 ">
                             <MdHome />
                         </Link>
@@ -68,7 +117,9 @@ function NavBar() {
                     <div>
 
                         <div className="flex items-center justify-end py-2 md:py-3 md:block">
-
+                            <Link href="/" className="text-3xl pb-4 md:pb-0 text-purple-500 ">
+                                <MdHome />
+                            </Link>
                             {/* HAMBURGER BUTTON FOR MOBILE */}
                             <div className="md:hidden">
                                 <button

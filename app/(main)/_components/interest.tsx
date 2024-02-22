@@ -4,7 +4,7 @@ import React from 'react'
 
 const Card = () => {
     return (
-        <div className="border w-1/5 h-[150px] text-center py-4">
+        <div className="border w-full md:w-1/5  h-[150px] text-center py-4">
             <Title color='text-purple-700 mt-2' title='Attendees' />
             <Title color='text-purple-700 mt-4' title='Attendees' />
         </div>

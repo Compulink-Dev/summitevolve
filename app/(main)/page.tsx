@@ -10,6 +10,7 @@ import Interest from './_components/interest'
 import Partners from '@/components/partners'
 
 function Home() {
+
   return (
     <Layout>
       <div className="">
