@@ -1,6 +1,7 @@
 import Subtitle from '@/components/subtitle'
 import Title from '@/components/title'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 import React from 'react'
 
 const Event = () => {
@@ -25,7 +26,9 @@ function About() {
                 <Event />
             </div>
             <div className="flex items-center justify-center my-8">
-                <Button className='md:w-1/5 p-6 bg-purple-600 mb-8'>Register your interest</Button>
+                <Button className='md:w-1/5 p-6 bg-purple-600 mb-8'>
+                    <Link href={'/login'}>Register your interest</Link>
+                </Button>
             </div>
         </div>
     )

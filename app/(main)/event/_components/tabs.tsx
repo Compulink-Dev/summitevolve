@@ -12,7 +12,7 @@ function Tabs() {
 
     return (
         <div className="container mx-auto max-w-7xl my-8 flex justify-center items-center px-4">
-            <div className="container2 border border-purple-400">
+            <div className="container2 border border-purple-400 rounded">
                 <div className="bloc-tabs">
                     <button
                         className={

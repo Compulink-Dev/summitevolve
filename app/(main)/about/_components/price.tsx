@@ -5,6 +5,7 @@ import { MdArrowRight } from "react-icons/md";
 import { useAuthState } from 'react-firebase-hooks/auth'
 import Title from "@/components/title";
 import { Color } from "@/constants/color";
+import { Button } from "@/components/ui/button";
 
 function PriceList({ title, list1, list2 }: { title: string, list1: string, list2: string }) {
     return (
@@ -112,6 +113,15 @@ function Price() {
                             Register to pay
                         </Link>
                 } */}
+            </div>
+            <div className="w-full p-8 flex items-center justify-end">
+                <Button
+                    className="bg-purple-600 text-white "
+                >
+                    <Link href={'/checkout'}>
+                        Make payment
+                    </Link>
+                </Button>
             </div>
         </div>
     )

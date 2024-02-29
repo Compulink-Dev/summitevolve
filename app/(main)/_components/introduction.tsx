@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import React from 'react'
 import { FaVideo } from "react-icons/fa";
 import { home } from '@/constants/data';
+import Link from 'next/link';
 
 function Introduction() {
     return (
@@ -30,7 +31,9 @@ function Introduction() {
                 </div>
             </div>
             <div className="flex items-center justify-center">
-                <Button className='md:w-1/5 p-6 bg-purple-700 mb-8'>View our programme</Button>
+                <Button className='md:w-1/5 p-6 bg-purple-700 mb-8'>
+                    <Link href={'/event'}>View our programme</Link>
+                </Button>
             </div>
         </div>
     )

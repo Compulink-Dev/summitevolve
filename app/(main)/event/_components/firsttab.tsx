@@ -31,7 +31,7 @@ function FirstTab() {
                 <EventSchedule text="Exhibition Stands – Time" />
                 <div className="mt-4">
                     <Button className="border rounded bg-purple-600 hover:bg-purple-500">
-                        <Link href={'/auth/register'}>Register</Link>
+                        <Link href={'/register'}>Register</Link>
                     </Button>
                 </div>
             </div>

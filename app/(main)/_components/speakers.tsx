@@ -1,6 +1,7 @@
 import Subtitle from '@/components/subtitle'
 import Title from '@/components/title'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 import React from 'react'
 import { MdPerson } from 'react-icons/md'
 
@@ -36,7 +37,9 @@ function Speakers() {
                 <Speaker />
             </div>
             <div className="flex items-center justify-center my-8">
-                <Button className='md:w-1/5 p-6 bg-purple-950 mb-8'>View all speakers</Button>
+                <Button className='md:w-1/5 p-6 bg-purple-950 mb-8'>
+                    <Link href={'/speakers'}>View all speakers</Link>
+                </Button>
             </div>
         </div>
     )

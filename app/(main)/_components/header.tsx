@@ -50,15 +50,17 @@ function Header() {
                     <div className="">
                         {
                             header ?
+
                                 <Link href={'/'}>
                                     <Image src={'/logo.png'} alt='' width={100} height={100} />
-                                </Link> :
-                                <Link href="/" className="text-3xl pb-4 md:pb-0 text-purple-500 ">
-                                    <MdHome />
                                 </Link>
+                                :
+                                <div className=""></div>
                         }
                     </div>
-
+                    <Link href="/" className="text-3xl pb-4 md:pb-0 text-purple-500">
+                        <MdHome />
+                    </Link>
                     <li className="px-6 text-center mb-4 md:mb-0  ">
                         <Link
                             href="/about"
@@ -106,7 +108,7 @@ function Header() {
                                 <Image src={'/logo.png'} alt='' width={100} height={100}></Image>
                             </Link>
                             :
-                            <Link href="/" className="text-3xl pb-4 md:pb-0 text-purple-500 ">
+                            <Link href="/" className="text-3xl pb-4 md:pb-0 text-purple-500 flex md:hidden">
                                 <MdHome />
                             </Link>
                     }
