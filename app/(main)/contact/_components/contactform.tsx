@@ -1,49 +1,135 @@
+'use client'
 import { Color } from '@/constants/color'
 import React from 'react'
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
+import { Button } from "@/components/ui/button"
+import {
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import Link from 'next/link'
+import { Textarea } from '@/components/ui/textarea'
 
-function Contactform() {
+const FormSchema = z.object({
+    firstName: z.string().min(1, 'First name is required').email('Invalid user details'),
+    lastName: z.string().min(1, 'Last name is required').email('Invalid user details'),
+    email: z.string().min(1, 'Email is required').email('Invalid email'),
+    password: z.string().min(1, 'Password is required').min(8, 'Password must have more tha 8 characters'),
+    message: z
+        .string()
+        .min(10, {
+            message: "Message must be at least 10 characters.",
+        })
+        .max(160, {
+            message: "Message must not be longer than 30 characters.",
+        }),
+})
+
+
+function ContactForm() {
+
+    const form = useForm<z.infer<typeof FormSchema>>({
+        resolver: zodResolver(FormSchema),
+        defaultValues: {
+            email: "",
+            password: "",
+            firstName: "",
+            lastName: "",
+            message: "",
+        },
+    })
+
+    function onSubmit(data: z.infer<typeof FormSchema>) {
+        console.log(data);
+    }
+
     return (
         <div className="">
-            <div className="container mx-auto max-w-7xl my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="flex flex-col justify-center items-center">
+            <div className="container w-full mx-auto max-w-7xl my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="flex flex-col justify-center items-center w-full">
                     <h1 className="font-bold text-2xl md:text-4xl text-purple-400">
                         Please Send Us Your Enquiry
                     </h1>
-                    <form action="" className="flex flex-col gap-4 w-full px-4">
-                        <div className="flex flex-col md:flex-row gap-4 mt-6">
-                            <input
-                                type="text"
-                                placeholder="First Name"
-                                className="border w-full border-purple-300 py-2 px-4 outline-purple-400 text-sm placeholder:text-sm "
+                    <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="w-full mx-2 md:mx-0 space-y-6 p-4 md:p-8 rounded mb:0 md:mb-8">
+                            <p className="text-lg font-bold text-white">Login to your account</p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <FormField
+                                    control={form.control}
+                                    name="firstName"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className='text-purple-900'>First Name</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder="Enter your first name" {...field} className="outline-none w-full" />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name="lastName"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className='text-purple-900'>Last Name</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder="Enter your last name" {...field} className="outline-none w-full" />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
+                            </div>
+                            <FormField
+                                control={form.control}
+                                name="email"
+                                render={({ field }) => (
+                                    <FormItem className=''>
+                                        <FormLabel className='text-purple-900'>Email</FormLabel>
+                                        <FormControl className='w-full'>
+                                            <Input placeholder="Enter your email" {...field} className="outline-none" />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
                             />
-                            <input
-                                type="text"
-                                placeholder="Last Name"
-                                className="border border-purple-300 py-2 px-4 outline-purple-400 text-sm placeholder:text-sm "
+                            <FormField
+                                control={form.control}
+                                name="message"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel className='text-purple-900'>Message</FormLabel>
+                                        <FormControl>
+                                            <Textarea
+                                                placeholder="Send message"
+                                                className="resize-none"
+                                                {...field}
+                                            />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
                             />
-                        </div>
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            className="border border-purple-300 py-2 px-4 outline-purple-400 text-sm placeholder:text-sm "
-                        />
-                        <textarea
-                            placeholder="Message"
-                            rows={6}
-                            className="border border-purple-300 py-2 px-4 outline-purple-400 text-sm placeholder:text-sm "
-                        />
-                        <button
-                            type="submit"
-                            className="text-white bg-purple-600 rounded-sm py-2 px-4 hover:scale-95 transition duration-1000"
-                        >
-                            Send Message
-                        </button>
-                    </form>
+
+                            <Button type="submit" className="bg-purple-900 hover:bg-purple-500">Send Message</Button>
+
+                        </form>
+
+                    </Form>
                 </div>
 
 
                 <div className="container px-4 md:px-0 mx-auto max-w-7xl flex flex-col justify-center items-center">
-                    <div className="border border-purple-600 rounded-lg">
+                    <div className="border border-purple-600 rounded-lg w-full">
                         <div className="border-b-2 border-purple-600  max-w-7xl container mx-auto text-center p-4">
                             <h1 className="font-bold text-lg text-purple-500 ">
                                 Our Contact Details
@@ -77,4 +163,4 @@ function Contactform() {
     )
 }
 
-export default Contactform
+export default ContactForm

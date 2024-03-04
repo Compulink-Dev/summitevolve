@@ -88,62 +88,62 @@ export const attendee = [
 ]
 
 export const speakers = [
-    {
-        id: 1,
-        name: "Mary Saruchera",
-        post: "Secretary",
-        desc: "Intro to A.I",
-        image: "/home/logo.png"
-    },
-    {
-        id: 2,
-        name: "Mary Saruchera",
-        post: "Secretary",
-        desc: "Intro to A.I",
-        image: "/home/logo.png"
-    },
-    {
-        id: 3,
-        name: "Mary Saruchera",
-        post: "Secretary",
-        desc: "Intro to A.I",
-        image: "/home/logo.png"
-    },
-    {
-        id: 4,
-        name: "Mary Saruchera",
-        post: "Secretary",
-        desc: "Intro to A.I",
-        image: "/home/logo.png"
-    },
+    // {
+    //     id: 1,
+    //     name: "Mary Saruchera",
+    //     post: "Secretary",
+    //     desc: "Intro to A.I",
+    //     image: "/home/logo.png"
+    // },
+    // {
+    //     id: 2,
+    //     name: "Mary Saruchera",
+    //     post: "Secretary",
+    //     desc: "Intro to A.I",
+    //     image: "/home/logo.png"
+    // },
+    // {
+    //     id: 3,
+    //     name: "Mary Saruchera",
+    //     post: "Secretary",
+    //     desc: "Intro to A.I",
+    //     image: "/home/logo.png"
+    // },
+    // {
+    //     id: 4,
+    //     name: "Mary Saruchera",
+    //     post: "Secretary",
+    //     desc: "Intro to A.I",
+    //     image: "/home/logo.png"
+    // },
 ]
 
 export const partners = [
-    {
-        id: 1,
-        image: '/home/old-mutual-logo.png',
-        name: ''
-    },
-    {
-        id: 2,
-        image: '/home/old-mutual-logo.png',
-        name: ''
-    },
-    {
-        id: 3,
-        image: '/home/old-mutual-logo.png',
-        name: ''
-    },
-    {
-        id: 4,
-        image: '/home/old-mutual-logo.png',
-        name: ''
-    },
-    {
-        id: 5,
-        image: '/home/old-mutual-logo.png',
-        name: ''
-    },
+    // {
+    //     id: 1,
+    //     image: '/home/old-mutual-logo.png',
+    //     name: ''
+    // },
+    // {
+    //     id: 2,
+    //     image: '/home/old-mutual-logo.png',
+    //     name: ''
+    // },
+    // {
+    //     id: 3,
+    //     image: '/home/old-mutual-logo.png',
+    //     name: ''
+    // },
+    // {
+    //     id: 4,
+    //     image: '/home/old-mutual-logo.png',
+    //     name: ''
+    // },
+    // {
+    //     id: 5,
+    //     image: '/home/old-mutual-logo.png',
+    //     name: ''
+    // },
 ]
 
 export const sectors = [
@@ -539,5 +539,49 @@ export const contents = [
                 paragraph: ""
             }
         ]
+    }
+]
+
+
+export const interests = [
+    {
+        id: 1,
+        title: "400",
+        subtitle: "Attendees"
+    },
+    {
+        id: 2,
+        title: "12",
+        subtitle: "A List Speakers"
+    },
+    {
+        id: 3,
+        title: "50",
+        subtitle: "VIPs"
+    },
+    {
+        id: 4,
+        title: "50",
+        subtitle: "Startups"
+    },
+    {
+        id: 5,
+        title: "20",
+        subtitle: "Exhibitors"
+    },
+    {
+        id: 6,
+        title: "12",
+        subtitle: "Tracks"
+    },
+    {
+        id: 7,
+        title: "50",
+        subtitle: "Companies"
+    },
+    {
+        id: 8,
+        title: "120",
+        subtitle: "Countries Represented"
     }
 ]

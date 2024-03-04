@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 import axios from "axios";
 
-export const logout = async () => {
+export const Logout = async () => {
     const router = useRouter()
     try {
         await axios.get('/api/users/logout');

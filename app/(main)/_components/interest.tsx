@@ -1,12 +1,19 @@
 import Title from '@/components/title'
+import { interests } from '@/constants/data'
 import React from 'react'
 
+interface InterestProps {
+    imageUrl?: string
+    title: string
+    subtitle: string
+}
 
-const Card = () => {
+
+const Card = ({ imageUrl, title, subtitle }: InterestProps) => {
     return (
-        <div className="border w-full md:w-1/5  h-[150px] text-center py-4">
-            <Title color='text-purple-700 mt-2' title='Attendees' />
-            <Title color='text-purple-700 mt-4' title='Attendees' />
+        <div className="bg-[url('/purple3.jpg')] border w-full md:w-1/5  h-[150px] text-center py-4 object-contain rounded">
+            <Title color='text-purple-400 text-6xl' title={title} />
+            <Title color='text-white text-lg' title={subtitle} />
         </div>
     )
 }
@@ -21,14 +28,11 @@ function Interest() {
                 </p>
             </div>
             <div className="flex items-center justify-center mt-8 gap-4 flex-wrap">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {
+                    interests.map((interest) => (
+                        <Card title={interest.title} subtitle={interest.subtitle} key={interest.id} />
+                    ))
+                }
             </div>
         </div>
     )
